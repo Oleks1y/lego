@@ -17,3 +17,4 @@ before_install:
 after_success:
 - go get github.com/mitchellh/gox
 - gox -s "linux darwin windows freebsd solaris openbsd" -arch 'amd64 386 arm7 mips mips64' -osarch '!darwin/arm, !darwin/arm64'
+
